@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Slide from '@mui/material/Slide';
 import { grey } from '@mui/material/colors';
@@ -46,10 +46,15 @@ export default function HideAppBar(props: Props) {
           }}
         >
           <Toolbar variant='dense'>
-            <img
-              src={require('../assets/logo_dark_grey.png')}
-              style={{ width: '140px' }}
-            />
+            <Grid container>
+              <Grid item xs={6}></Grid>
+              <Grid item xs={6}>
+                <img
+                  src={require('../assets/logo_light_grey_textOnly.png')}
+                  style={{ width: '120px' }}
+                />
+              </Grid>
+            </Grid>
             {/* <Typography variant='h6' component='div'>
               Scroll to hide App bar
             </Typography> */}
