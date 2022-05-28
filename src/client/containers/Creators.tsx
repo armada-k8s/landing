@@ -1,13 +1,21 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
+import FeatureWrapper from '../components/FeatureWrapper';
 
 function Creators() {
   return (
-    <Grid container spacing={2} mt={5}>
-      <Grid item xs={7}>
-        <Typography variant='h1'>It's time for a new way of success</Typography>
-      </Grid>
-    </Grid>
+    <FeatureWrapper title='Creators' bgColor='white'>
+      <React.Fragment>
+        <Grid
+          container
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+          rowSpacing={20}
+        ></Grid>
+      </React.Fragment>
+    </FeatureWrapper>
   );
 }
 
