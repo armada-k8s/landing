@@ -7,7 +7,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Slide from '@mui/material/Slide';
-import { palette } from '@mui/system';
+import { grey } from '@mui/material/colors';
 
 interface Props {
   /**
@@ -39,11 +39,20 @@ export default function HideAppBar(props: Props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll>
-        <AppBar sx={{ background: 'white', color: 'GrayText' }}>
-          <Toolbar>
-            <Typography variant='h6' component='div'>
+        <AppBar
+          sx={{
+            background: grey['800'],
+            color: '#f5f5f7',
+          }}
+        >
+          <Toolbar variant='dense'>
+            <img
+              src={require('../assets/logo_dark_grey.png')}
+              style={{ width: '140px' }}
+            />
+            {/* <Typography variant='h6' component='div'>
               Scroll to hide App bar
-            </Typography>
+            </Typography> */}
           </Toolbar>
         </AppBar>
       </HideOnScroll>

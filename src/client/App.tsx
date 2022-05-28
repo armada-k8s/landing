@@ -8,16 +8,17 @@ import Main from './containers/Main';
 import Features from './containers/Features';
 import Creators from './containers/Creators';
 import { theme } from './styles/themeOptions';
+import './styles/styles.css';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar>
-        <Container maxWidth='xl'>
+        <React.Fragment>
           <Main />
           <Features />
           <Creators />
-        </Container>
+        </React.Fragment>
       </Navbar>
     </ThemeProvider>
   );
