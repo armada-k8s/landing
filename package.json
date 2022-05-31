@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/armada-k8s/landing.git"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
