@@ -38,6 +38,6 @@ app.use(
   }
 );
 
-app.listen(3000, () =>
+app.listen(process.env.PORT, () =>
   console.log('server is listening on port 3000')
 );
