@@ -7,18 +7,20 @@ import CTAQuery from '../components/CTAQuery';
 import CTALogs from '../components/CTALogs';
 function CTA() {
   return (
-    <FeatureWrapper title='About'>
+    <FeatureWrapper title='About' id='features'>
       <React.Fragment>
         <Grid
           container
+          justifyContent='space-between'
           sx={{
             display: 'flex',
             justifyContent: 'space-between',
           }}
           rowSpacing={20}
         >
-          <CTAMetrics />
           <CTAGlance />
+          <CTAMetrics />
+
           <CTAQuery />
           <CTALogs />
         </Grid>

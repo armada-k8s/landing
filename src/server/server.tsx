@@ -12,7 +12,7 @@ app.get('*', (req: Request, res: Response) => {
     .sendFile('index.html', { root: path.join(__dirname, '../../build') });
 });
 // Global route handler
-app.use('*', (req, res) => {
+app.use('*', (req: Request, res: Response) => {
   console.log('Page not found.');
   return res.status(404).send('Page not found.');
 });

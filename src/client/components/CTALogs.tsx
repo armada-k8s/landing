@@ -1,38 +1,24 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
+import CTAText from './CTAText';
+import CTAImage from './CTAImage';
 
 function CTALogs() {
   return (
-    <React.Fragment>
-      <Grid
-        item
-        xs={6}
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-evenly',
-        }}
-      >
-        <Typography variant='h3'>
-          Centralized Place for Alerts and Event Logs
-        </Typography>
-        <Typography variant='body2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis
-          commodo odio aenean sed. Amet facilisis magna etiam tempor. Lorem
-          ipsum dolor sit amet consectetur adipiscing. Nulla facilisi etiam
-          dignissim diam quis enim lobortis scelerisque fermentum. Vestibulum
-          morbi blandit cursus risus at ultrices mi. Convallis a cras semper
-          auctor neque vitae tempus. Quis commodo odio aenean sed adipiscing
-          diam donec adipiscing tristique. Purus sit amet volutpat consequat. Id
-          eu nisl nunc mi. Nulla malesuada pellentesque elit eget gravida cum.
-          Tristique senectus et netus et malesuada.
-        </Typography>
-      </Grid>
-      <Grid item xs={4}>
-        <img src={require('../assets/stack.png')} />
-      </Grid>
-    </React.Fragment>
+    <>
+      <CTAImage>
+        <img
+          src={require('../assets/stack.png')}
+          style={{ maxWidth: '350px' }}
+        />
+      </CTAImage>
+      <CTAText title='Centralized Place for Alerts and Event Logs'>
+        Never miss a thing in your cluster again. On our alerts page you can see
+        all your rules in one place, filterable by group, name, status, and
+        severity. Expand to see descriptions and all firing alerts. Check out
+        the logs page to stay on top of all events in your cluster.
+      </CTAText>
+    </>
   );
 }
 
