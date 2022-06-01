@@ -20,7 +20,6 @@ function CTA() {
         >
           <CTAGlance />
           <CTAMetrics />
-
           <CTAQuery />
           <CTALogs />
         </Grid>
