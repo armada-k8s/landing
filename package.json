@@ -5,9 +5,10 @@
   "main": "src/server/server.ts",
   "type": "commonjs",
   "scripts": {
-    "start": "NODE_ENV=production ts-node src/server/server.ts",
+    "start": "serve -s build",
     "build": "NODE_ENV=production webpack",
-    "dev": "NODE_ENV=development nodemon src/server/server.ts & NODE_ENV=development webpack serve"
+    "dev": "NODE_ENV=development nodemon src/server/server.ts & NODE_ENV=development webpack serve",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "18.x"
@@ -32,6 +33,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scroll-parallax": "^3.2.0",
+    "serve": "^13.0.2",
     "ts-node": "^10.8.0",
     "webpack": "^5.72.1",
     "webpack-dev-server": "^4.9.0"
