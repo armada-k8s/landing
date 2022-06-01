@@ -3,5 +3,5 @@ export type ServerError = {
   status: number;
   message: { err: string };
 };
-declare module '*.png';
-declare module '*.jpg';
+// declare module '*.png';
+// declare module '*.jpg';

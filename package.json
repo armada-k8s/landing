@@ -2,12 +2,15 @@
   "name": "landing",
   "version": "1.0.0",
   "description": "A landing page for Armada K8s Monitoring App",
-  "main": "src/server/server.tsx",
+  "main": "src/server/server.ts",
   "type": "commonjs",
   "scripts": {
-    "start": "NODE_ENV=production nodemon src/server/server.tsx",
+    "start": "NODE_ENV=production nodemon src/server/server.ts",
     "build": "NODE_ENV=production webpack",
-    "dev": "NODE_ENV=development nodemon src/server/server.tsx & NODE_ENV=development webpack serve"
+    "dev": "NODE_ENV=development nodemon src/server/server.ts & NODE_ENV=development webpack serve"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "repository": {
     "type": "git",

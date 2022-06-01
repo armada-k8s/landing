@@ -7,23 +7,32 @@ const creators = [
   {
     name: 'Tori Wu',
     color: '#9ccc65',
-    img: 'k8s_dog.png',
+    img: 'tori.jpg',
+    title: 'Full-stack engineer',
+    github: 'https://github.com/tortortor0',
+    linkedin: 'https://www.linkedin.com/in/victoria-y-wu',
     blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      'Tori is a full-stack software engineer who enjoys building tools that solve difficult problems and are delightful to use. She also loves digital drawing, rock climbing, and cooking.',
   },
   {
     name: 'Em Podhorcer',
     color: '#ff8a80',
-    img: 'k8s_dog.png',
+    img: 'me.jpg',
+    title: 'Full-stack engineer',
+    github: 'https://github.com/epithe',
+    linkedin: 'https://www.linkedin.com/in/emily-podhorcer/',
     blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      'Em is a software engineer who likes solving puzzles, algorithmic or otherwise. Her favorite language is Python. When not coding, they can often be found reading, playing video games, or performing standup comedy.',
   },
   {
     name: 'Nat Heller',
     color: '#00bcd4',
     img: 'nat.jpg',
+    title: 'Full-stack engineer',
+    github: 'https://github.com/natwheller',
+    linkedin: 'https://www.linkedin.com/in/natwheller/',
     blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      'Nat (she/they) has been working in tech since 2019 across many areas of Product. Now she primarily focuses on web dev, where she creates software that is user-friendly, easy to maintain, and scalable. She loves cats, Italian and Asian home cooking, and climbing.',
   },
   {
     name: 'Jessica Lee',
@@ -33,6 +42,8 @@ const creators = [
     img: 'jessica.jpg',
     blurb:
       'Jessica is a full-stack software engineer who loves learning new materials. Jessica is passionate about writing clean, modular, and performant code with peer engineers as well as the end-user in mind. During her free time, she likes to hike, play golf, and read books.',
+    github: 'https://github.com/frandis',
+    linkedin: 'https://www.linkedin.com/in/jessica-lee-790a283b/',
   },
 ];
 

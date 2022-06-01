@@ -22,7 +22,7 @@ function GetStartedStep(props: Props) {
       </Box>
       <Box component='div' p={3}>
         <Typography sx={{ textAlign: 'start' }}>{props.headline}</Typography>
-        <Typography sx={{ p: 2 }} variant='body2' color='text.secondary'>
+        <Typography sx={{ p: 2 }} variant='body1' color='text.secondary'>
           {props.children}
         </Typography>
       </Box>
