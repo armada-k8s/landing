@@ -60,7 +60,6 @@ const config = {
 			},
 		],
 	},
-
 	devServer: {
 		static: {
 			directory: path.resolve(__dirname, "build"),

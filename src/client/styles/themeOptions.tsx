@@ -9,6 +9,9 @@ const themeOptions: ThemeOptions = {
       main: '#b0d0d3',
     },
   },
+  typography: {
+    fontFamily: 'Lato, sans-serif',
+  },
 };
 
 export const theme = createTheme(themeOptions);
