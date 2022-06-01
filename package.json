@@ -10,7 +10,7 @@
     "dev": "NODE_ENV=development nodemon src/server/server.ts & NODE_ENV=development webpack serve"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "repository": {
     "type": "git",
