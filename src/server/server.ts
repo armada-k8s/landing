@@ -6,11 +6,13 @@ const app = express();
 app.use(express.json());
 
 //For all routes access the index.html file
-app.get('*', (req: Request, res: Response) => {
-  res
-    .status(200)
-    .sendFile('index.html', { root: path.join(__dirname, '../../build') });
-});
+// app.get('*', (req: Request, res: Response) => {
+//   res
+//     .status(200)
+//     .sendFile('index.html', { root: path.join(__dirname, '../../build') });
+// });
+app.use(express.static(path.resolve(__dirname, '../../build/')));
+
 // Global route handler
 app.use('*', (req: Request, res: Response) => {
   console.log('Page not found.');
@@ -36,4 +38,6 @@ app.use(
   }
 );
 
-app.listen(process.env.PORT || 3000, () => console.log('server is listening on port 3000'));
+app.listen(process.env.PORT || 3000, () =>
+  console.log('server is listening on port 3000')
+);
