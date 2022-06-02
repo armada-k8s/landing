@@ -51,7 +51,7 @@ const links = [
     url: 'https://www.linkedin.com/company/armadak8s/',
     icon: 'fa-brands fa-linkedin fa-lg',
   },
-  { item: 'medium', url: '#', icon: 'fa-brands fa-medium' },
+  { item: 'medium', url: 'https://medium.com/@nat.w.heller/armada-k8s-a-sleek-and-powerful-kubernetes-monitoring-solution-bb448ede7d04', icon: 'fa-brands fa-medium' },
 ];
 
 export default function HideAppBar(props: Props) {
@@ -207,6 +207,7 @@ export default function HideAppBar(props: Props) {
                       display: 'flex',
                       justifyContent: 'center',
                       alignItems: 'center',
+                      textDecoration: 'none'
                     }}
                   >
                     <i
