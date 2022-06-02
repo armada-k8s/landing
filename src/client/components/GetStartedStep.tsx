@@ -4,7 +4,7 @@ import { Typography, Grid, Box } from '@mui/material';
 interface Props {
   icon: string;
   headline: string;
-  children: string;
+  children: string | React.ReactNode;
 }
 
 function GetStartedStep(props: Props) {
