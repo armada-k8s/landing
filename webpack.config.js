@@ -60,23 +60,23 @@ const config = {
 			},
 		],
 	},
-	// devServer: {
-	//   static: {
-	//     directory: path.resolve(__dirname, 'build'),
-	//     publicPath: '/',
-	//   },
-	//   compress: true,
-	//   port: 5001,
-	//   hot: true,
-	//   historyApiFallback: true,
-	//   proxy: {
-	//     '/api': {
-	//       target: 'http://localhost:3000',
-	//       secure: false,
-	//       changeOrigin: true,
-	//     },
-	//   },
-	// },
+	devServer: {
+		static: {
+			directory: path.resolve(__dirname, "build"),
+			publicPath: "/",
+		},
+		compress: true,
+		port: 5001,
+		hot: true,
+		historyApiFallback: true,
+		proxy: {
+			"/api": {
+				target: "http://localhost:3000",
+				secure: false,
+				changeOrigin: true,
+			},
+		},
+	},
 };
 
 module.exports = config;

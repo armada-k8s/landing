@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Grid, Box } from '@mui/material';
 import FeatureWrapper from '../components/FeatureWrapper';
 import GetStartedStep from '../components/GetStartedStep';
-import { CodeBlock, CopyBlock } from "react-code-blocks"
+import { CodeBlock, CopyBlock, github, nord } from "react-code-blocks"
 
 function GetStarted() {
   return (
@@ -15,6 +15,8 @@ function GetStarted() {
           ><>
             <CopyBlock 
               text="git clone git@github.com:oslabs-beta/Armada.git"
+              theme={nord}
+              showLineNumbers={false}
             ></CopyBlock>
             </>
           </GetStartedStep>
@@ -23,16 +25,20 @@ function GetStarted() {
             headline='2. Port forward Prometheus'
           >
             To port-forward Prometheus, run the following command, replacing the terms in brackets with the namespace and service name.
-            <CopyBlock text="kubectl port-forward -n <namespace> svc/<service name> 9090" />
+            <CopyBlock 
+            text="kubectl port-forward -n <namespace> svc/<service name> 9090" 
+            theme={nord}
+            showLineNumbers={false}
+            />
           </GetStartedStep>
           <GetStartedStep
             icon='fa-solid fa-window-maximize fa-4x'
             headline='3. Run Armada'
           >
             Run the following commands: 
-            <CodeBlock text="npm install"/>
-            <CodeBlock text="npm run build"/>
-            <CodeBlock text="npm start"/>
+            <CodeBlock text="npm install" theme={nord} showLineNumbers={false}/>
+            <CodeBlock text="npm run build" theme={nord} showLineNumbers={false}/>
+            <CodeBlock text="npm start" theme={nord} showLineNumbers={false}/>
             Then go to http://localhost:3001/ and enjoy your new Kubernetes experience!
           </GetStartedStep>
         </Grid>
