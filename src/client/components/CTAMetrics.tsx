@@ -7,7 +7,8 @@ function CTAMetrics() {
   return (
     <>
       <CTAImage>
-        <img src={require('../assets/metrics.gif')} />
+        <img src={require('../assets/metrics.gif')}/>
+        
       </CTAImage>
       <CTAText title='Focus on the Metrics that Matter'>
         For more detailed visibility into the metrics within your cluster, we've

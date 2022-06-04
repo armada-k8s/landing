@@ -10,7 +10,8 @@ function CTAText(props: Props) {
   return (
     <Grid
       item
-      sm={6}
+      sm={4}
+      xs={12}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -20,7 +21,7 @@ function CTAText(props: Props) {
       <Typography sx={{ typography: { xs: 'h4', sm: 'h4', md: 'h3' }, mb: 3 }}>
         {props.title}
       </Typography>
-      <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+      <Typography variant='h6' sx={{ color: 'text.secondary'}}>
         {props.children}
       </Typography>
     </Grid>

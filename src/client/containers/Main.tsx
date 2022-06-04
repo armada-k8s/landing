@@ -28,7 +28,7 @@ function Main() {
             Introducing Armada
           </Typography>
           <Typography
-            variant='h6'
+            variant='h5'
             color='text.secondary'
             sx={{
               maxWidth: '420px',
