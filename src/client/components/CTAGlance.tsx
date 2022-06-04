@@ -9,6 +9,7 @@ function CTAGlance() {
       <CTAImage position='top'>
         <img src={require('../assets/dashboard.gif')} />
       </CTAImage>
+      
       <CTAText title='Cluster Health at a Glance'>
         No more hunting around in your terminal - our homepage provides a quick
         and comprehensive overview of your cluster health and performance via a
@@ -19,7 +20,8 @@ function CTAGlance() {
         the process of tracking down resources pertaining to your virtual
         sub-clusters.
       </CTAText>
-      <CTAImage position='right'>
+  
+      <CTAImage right={true} position='right'>
         <img src={require('../assets/dashboard.gif')} />
       </CTAImage>
     </>

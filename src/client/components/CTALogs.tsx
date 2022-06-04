@@ -9,7 +9,8 @@ function CTALogs() {
       <CTAImage>
         <img
           src={require('../assets/stack.png')}
-          style={{ maxWidth: '350px' }}
+          // style={{ maxWidth: '350px' }}
+          
         />
       </CTAImage>
       <CTAText title='Centralized Place for Alerts and Event Logs'>
